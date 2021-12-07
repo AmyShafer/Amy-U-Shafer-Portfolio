@@ -1,5 +1,143 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --pink: #E409AC;
+  --yellow: #FFC60A;
+  --blue: #00B1FD;
+}
+
+body {
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.white-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  background-color: white;
+}
+
+/* blue square is stationary */
+.blue-square {
+  position: absolute;
+  margin-top: 135px;
+  width: 300px;
+  height: 300px; 
+  background-color: var(--blue);
+  justify-content: center;
+  align-content: center;
+}
+
+/* yellow square is faster */
+.yellow-square {
+  position: absolute;
+  margin-top: 135px;
+  width: 300px;
+  height: 300px; 
+  background-color: var(--yellow);
+  opacity: 0.75;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: rescale 2s infinite;
+  animation: rescale 2s infinite;
+}
+
+@-webkit-keyframes rescale {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(36deg);}
+  20% {transform:rotate(72deg);}
+  30% {transform:rotate(108deg);}
+  40% {transform:rotate(144deg);}
+  50% {transform:rotate(180deg);}
+  60% {transform:rotate(216deg);}
+  70% {transform:rotate(252deg);}
+  80% {transform:rotate(288deg);}
+  90% {transform:rotate(334deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@keyframes rescale {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(36deg);}
+  20% {transform:rotate(72deg);}
+  30% {transform:rotate(108deg);}
+  40% {transform:rotate(144deg);}
+  50% {transform:rotate(180deg);}
+  60% {transform:rotate(216deg);}
+  70% {transform:rotate(252deg);}
+  80% {transform:rotate(288deg);}
+  90% {transform:rotate(334deg);}
+  100% {transform:rotate(360deg);}
+}
+
+/* pink square is slower */
+.pink-square {
+  position: absolute;
+  margin-top: 135px;
+  width: 300px;
+  height: 300px; 
+  background-color: var(--pink);
+  opacity: 0.83;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: rescale 1s infinite;
+  animation: rescale 4s infinite;
+}
+
+.black-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  height: 600px;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img .paint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li a {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Homemade Apple', cursive;
+  color: pink;
+  font-size: 3em;
+  text-decoration: none;
 }
 
 #about-me {
@@ -16,7 +154,7 @@ body {
 
 
 .about-me {
-  background-image: ;
+
 }
 
 .work {
