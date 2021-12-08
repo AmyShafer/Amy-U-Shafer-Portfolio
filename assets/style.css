@@ -21,17 +21,18 @@ main {
   width: 100%;
 }
 
-.white-half {
+#white-half1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1;
+  width: 50%;
+  margin-bottom: 5px;
   justify-content: center;
   background-color: white;
 }
 
 /* blue square is stationary */
-.blue-square {
+#blue-square {
   position: absolute;
   margin-top: 135px;
   width: 300px;
@@ -42,7 +43,7 @@ main {
 }
 
 /* yellow square is faster */
-.yellow-square {
+#yellow-square {
   position: absolute;
   margin-top: 135px;
   width: 300px;
@@ -53,6 +54,20 @@ main {
   align-content: center;
   -webkit-animation: rescale 2s infinite;
   animation: rescale 2s infinite;
+}
+
+/* pink square is slower */
+#pink-square {
+  position: absolute;
+  margin-top: 135px;
+  width: 300px;
+  height: 300px; 
+  background-color: var(--pink);
+  opacity: 0.83;
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: rescale 1s infinite;
+  animation: rescale 4s infinite;
 }
 
 @-webkit-keyframes rescale {
@@ -83,42 +98,21 @@ main {
   100% {transform:rotate(360deg);}
 }
 
-/* pink square is slower */
-.pink-square {
-  position: absolute;
-  margin-top: 135px;
-  width: 300px;
-  height: 300px; 
-  background-color: var(--pink);
-  opacity: 0.83;
-  justify-content: center;
-  align-content: center;
-  -webkit-animation: rescale 1s infinite;
-  animation: rescale 4s infinite;
-}
-
-.black-half {
+#black-half1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1;
+  width: 50%;
+  height: 500px;
   justify-content: center;
-  height: 600px;
-  background-color: black;
+  background: black url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/navBar.png) center repeat;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-
-img .paint {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
 }
 
 h1 {
@@ -131,38 +125,112 @@ ul {
 }
 
 nav ul li a {
-  position: relative;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-family: 'Homemade Apple', cursive;
-  color: pink;
+  color: black;
   font-size: 3em;
   text-decoration: none;
 }
 
-#about-me {
-
+#about-me-link {
+  padding: 3em 0 2em 0;
 }
 
-#work {
-
+#work-link {
+  padding: 1.8em 0 2em 0;
 }
 
-#contact-me {
-
+#contact-me-link {
+  padding: 1em 0 2em 0;
 }
-
 
 .about-me {
-
+  margin: 50px 0 50px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
 }
 
-.work {
-
+#black-half2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 500px;
+  justify-content: center;
+  background: black url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/black-paint.png) center repeat;
 }
 
-.contact-me {
-    
+#moving-circles {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 82px;
+  align-items: center;
+}
+
+#pink-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  justify-content: center;
+  align-content: center;
+}
+
+#blue-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  justify-content: center;
+  align-content: center;
+}
+
+#yellow-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  justify-content: center;
+  align-content: center;
+}
+
+#white-half2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 500px;
+  background-color: white;
+}
+
+h2 {
+  display: flex-inline;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.2em;
+}
+
+p {
+  display: flex-inline;
+  flex-direction: column;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 /* animated squares -- home
