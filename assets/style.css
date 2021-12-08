@@ -148,15 +148,15 @@ nav ul li a {
 }
 
 .about-me {
-  margin: 50px 0 50px 0;
+  margin: 50px 0 10px 0;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
   width: 100%;
 }
 
 #black-half2 {
+  position: absolute;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -164,9 +164,12 @@ nav ul li a {
   height: 500px;
   justify-content: center;
   background: black url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/black-paint.png) center repeat;
+  z-index: -1;
 }
 
 #moving-circles {
+  margin-top: 110px;
+  left: 66px;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -177,6 +180,7 @@ nav ul li a {
 }
 
 #pink-circle {
+  margin-top: -20px;
   position: absolute;
   width: 300px;
   height: 300px;
@@ -184,9 +188,12 @@ nav ul li a {
   background-color: var(--pink);
   justify-content: center;
   align-content: center;
+  animation: moveUp 2s infinite;
+  animation: moveDown 2s infinite;
 }
 
 #blue-circle {
+  /*margin-top: 100px;*/
   position: absolute;
   width: 300px;
   height: 300px;
@@ -194,16 +201,58 @@ nav ul li a {
   background-color: var(--blue);
   justify-content: center;
   align-content: center;
+  animation: moveLeft 2s infinite;
+  animation: moveRight 2s infinite;
 }
 
 #yellow-circle {
+  margin-top: 145px;
   position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
   background-color: var(--yellow);
+  opacity: 0.75;
   justify-content: center;
   align-content: center;
+  animation: moveRight 2s infinite;
+  animation: moveLeft 2s infinite;
+}
+
+@keyframes moveUp {
+  from {
+    top: 0;
+  }
+  to {
+    top: -7px;
+  }
+}
+
+@keyframes moveDown {
+  from {
+    top: 0;
+  }
+  to {
+    top: 7px;
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    left: 35px;
+  }
+  to {
+    left: 16px;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    left: 35px;
+  }
+  to {
+    left: 16px;
+  }
 }
 
 #white-half2 {
@@ -211,26 +260,42 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  right: 0;
   justify-content: center;
+  align-items: center;
   width: 70%;
   height: 500px;
   background-color: white;
+  z-index: -1;
+}
+
+#about-me-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me-header{
+  margin-top: -55px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
-  display: flex-inline;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
   font-family: 'Homemade Apple', cursive;
   font-size: 2.2em;
 }
 
 p {
-  display: flex-inline;
-  flex-direction: column;
+  margin-top: 210px;
   font-family: 'Readex Pro', sans-serif;
+  width: 200px;
 }
 
 /* animated squares -- home
