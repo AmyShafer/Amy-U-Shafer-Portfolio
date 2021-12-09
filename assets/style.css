@@ -21,6 +21,7 @@ main {
   width: 100%;
 }
 
+/* Above the Fold White Section */
 #white-half1 {
   display: flex;
   flex-direction: row;
@@ -98,6 +99,7 @@ main {
   100% {transform:rotate(360deg);}
 }
 
+/* Above the Fold Black Section */
 #black-half1 {
   display: flex;
   flex-direction: row;
@@ -277,7 +279,7 @@ nav ul li a {
   align-items: center;
 }
 
-#about-me-header{
+#about-me-header {
   margin-top: -55px;
   position: absolute;
   display: flex;
@@ -287,21 +289,236 @@ nav ul li a {
   align-items: center;
 }
 
-h2 {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 2.2em;
-}
-
-p {
+#about-me-text p {
   margin-top: 210px;
   font-family: 'Readex Pro', sans-serif;
   width: 200px;
 }
 
-/* animated squares -- home
+p {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Readex Pro', sans-serif;
+}
 
-/* animated circles -- about me
+.work {
+  margin: 600px 0 10px 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-/* animated triangles -- work
+#work-header {
+  margin-top: -350px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 220px;
+}
 
-/* animated lines -- contact me
+#white-half3 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  height: 500px;
+  background-color: white;
+  z-index: -1;
+}
+
+#work-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#work-text p {
+  margin-top: -245px;
+  font-family: 'Readex Pro', sans-serif;
+  width: 200px;
+}
+
+#work-square {
+  position: absolute;
+  right: 5px;
+  width: 185px;
+  height: 185px; 
+  background-color: var(--pink); 
+  z-index: -1;
+}
+
+#work-circle {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  z-index: -1;
+}
+
+#work-smaller-circle {
+  position: absolute;
+  top: -110px;
+  left: 50px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+  z-index: -1;
+}
+
+#work-square a,
+#work-circle a,
+#work-smaller-circle a {
+  font-size: 1.5em;
+  font-family: 'Inconsolata', monospace;
+  color: darkviolet;
+  text-decoration: none;
+}
+
+#work-square a:hover,
+#work-circle a:hover,
+#work-smaller-circle a:hover {
+  font-size: 2.5em;
+  font-family: 'Inconsolata', monospace;
+  color: green;
+}
+
+#black-half3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  right: 0;
+  width: 65%;
+  height: 500px;
+  justify-content: center;
+  background: black url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/black-paint.png) center repeat;
+  z-index: -1;
+}
+
+/* yellow is stationary */
+#yellow-triangle {
+  margin-top: 50px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid var(--yellow);
+}
+
+#blue-triangle {
+  margin-top: 50px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  opacity: .72;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid var(--blue);
+  -webkit-animation: rescale 1s infinite;
+  animation: rescale 5s infinite;
+}
+
+#pink-triangle {
+  margin-top: 50px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  opacity: .82;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 300px solid var(--pink);
+  -webkit-animation: rescale 1s infinite;
+  animation: rescale 3s infinite;
+}
+
+@-webkit-keyframes rescale {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(36deg);}
+  20% {transform:rotate(72deg);}
+  30% {transform:rotate(108deg);}
+  40% {transform:rotate(144deg);}
+  50% {transform:rotate(180deg);}
+  60% {transform:rotate(216deg);}
+  70% {transform:rotate(252deg);}
+  80% {transform:rotate(288deg);}
+  90% {transform:rotate(334deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@keyframes rescale {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(36deg);}
+  20% {transform:rotate(72deg);}
+  30% {transform:rotate(108deg);}
+  40% {transform:rotate(144deg);}
+  50% {transform:rotate(180deg);}
+  60% {transform:rotate(216deg);}
+  70% {transform:rotate(252deg);}
+  80% {transform:rotate(288deg);}
+  90% {transform:rotate(334deg);}
+  100% {transform:rotate(360deg);}
+}
+
+.contact-me {
+  margin: 1100px 0 10px 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  background-image: url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/black-paint.png);
+  z-index: -1;
+}
+
+.contact-me-header {
+  position: absolute;
+  display: flex;
+}
+
+.contact-me a {
+  font-size: 2em;
+  font-family: 'Inconsolata', monospace;
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+.contact-me a:hover {
+  font-size: 2.7em;
+  font-family: 'Inconsolata', monospace;
+  color: var(--pink);
+  text-decoration: wavy var(--yellow) underline;
+}
+
+#contact-me-circle {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  opacity: 0;
+  background-color var(--blue);
+  animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
