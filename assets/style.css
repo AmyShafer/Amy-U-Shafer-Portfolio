@@ -21,8 +21,13 @@ main {
   width: 100%;
 }
 
+#title {
+  font-family: 'Chango', cursive;
+}
+
 /* Above the Fold White Section */
 #white-half1 {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -155,7 +160,7 @@ nav ul li a {
 
 /* About Me Section */
 .about-me {
-  margin: 50px 0 10px 0;
+  margin: 60px 0 10px 0;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -177,7 +182,7 @@ nav ul li a {
 
 /* Moving Circle Section */
 #moving-circles {
-  margin-top: 110px;
+  margin-top: 140px;
   left: 66px;
   position: absolute;
   display: flex;
@@ -277,6 +282,53 @@ nav ul li a {
   height: 500px;
   background-color: white;
   z-index: -1;
+}
+
+#amy-pic {
+  position: absolute;
+  display: flex;
+  margin-top: -270px;
+  right: 120px;
+  animation: moveDown 2s infinite;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--blue);
+  justify-content: center;
+  align-content: center;
+  -webkit-animation: pictureBop 1s infinite;
+  animation: pictureBop 2s infinite;
+  z-index: 1;
+}
+
+/* Animation for the Picture of Amy */
+@-webkit-keyframes pictureBop  {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(5deg);}
+  20% {transform:rotate(7deg);}
+  30% {transform:rotate(10deg);}
+  40% {transform:rotate(7deg);}
+  50% {transform:rotate(5deg);}
+  60% {transform:rotate(2deg);}
+  70% {transform:rotate(0deg);}
+  80% {transform:rotate(-1deg);}
+  90% {transform:rotate(-3deg);}
+  100% {transform:rotate(-5deg);}
+}
+
+/* Animation for the Picture of Amy */
+@keyframes pictureBop  {
+  0% {transform:rotate(0deg);}
+  10% {transform:rotate(5deg);}
+  20% {transform:rotate(7deg);}
+  30% {transform:rotate(10deg);}
+  40% {transform:rotate(7deg);}
+  50% {transform:rotate(5deg);}
+  60% {transform:rotate(2deg);}
+  70% {transform:rotate(0deg);}
+  80% {transform:rotate(-1deg);}
+  90% {transform:rotate(-3deg);}
+  100% {transform:rotate(-5deg);}
 }
 
 #about-me-text {
