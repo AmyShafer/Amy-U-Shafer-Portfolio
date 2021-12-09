@@ -71,6 +71,7 @@ main {
   animation: rescale 4s infinite;
 }
 
+/* Animation for the Squares */
 @-webkit-keyframes rescale {
   0% {transform:rotate(0deg);}
   10% {transform:rotate(36deg);}
@@ -85,6 +86,7 @@ main {
   100% {transform:rotate(360deg);}
 }
 
+/* Animation for the Squares */
 @keyframes rescale {
   0% {transform:rotate(0deg);}
   10% {transform:rotate(36deg);}
@@ -110,6 +112,7 @@ main {
   background: black url(/Users/amyshafer/Bootcamp/Amy-U-Shafer-Portfolio/assets/images/navBar.png) center repeat;
 }
 
+/* Navigation Bar */
 nav {
   display: flex;
   flex-direction: row;
@@ -126,6 +129,7 @@ ul {
   list-style: none;
 }
 
+/* Navigation Bar */
 nav ul li a {
   display: flex;
   flex-direction: row;
@@ -138,17 +142,18 @@ nav ul li a {
 }
 
 #about-me-link {
-  padding: 3em 0 2em 0;
+  padding: 2em 0 6em 0;
 }
 
 #work-link {
-  padding: 1.8em 0 2em 0;
+  padding: 1em 0 3em 0;
 }
 
 #contact-me-link {
-  padding: 1em 0 2em 0;
+  padding: 3em 0 1em 0;
 }
 
+/* About Me Section */
 .about-me {
   margin: 50px 0 10px 0;
   position: absolute;
@@ -157,6 +162,7 @@ nav ul li a {
   width: 100%;
 }
 
+/* About Me Section Black Section */
 #black-half2 {
   position: absolute;
   display: flex;
@@ -169,6 +175,7 @@ nav ul li a {
   z-index: -1;
 }
 
+/* Moving Circle Section */
 #moving-circles {
   margin-top: 110px;
   left: 66px;
@@ -257,6 +264,7 @@ nav ul li a {
   }
 }
 
+/* About Me Section White Section */
 #white-half2 {
   position: absolute;
   display: flex;
@@ -279,6 +287,7 @@ nav ul li a {
   align-items: center;
 }
 
+/* About Me Image */
 #about-me-header {
   margin-top: -55px;
   position: absolute;
@@ -305,6 +314,7 @@ p {
   font-family: 'Readex Pro', sans-serif;
 }
 
+/* Work Section */
 .work {
   margin: 600px 0 10px 0;
   position: absolute;
@@ -313,6 +323,7 @@ p {
   width: 100%;
 }
 
+/* Work Section Image */
 #work-header {
   margin-top: -350px;
   position: absolute;
@@ -321,6 +332,7 @@ p {
   width: 220px;
 }
 
+/* Work Section White Section */
 #white-half3 {
   position: absolute;
   display: flex;
@@ -340,6 +352,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 #work-text p {
@@ -354,7 +367,6 @@ p {
   width: 185px;
   height: 185px; 
   background-color: var(--pink); 
-  z-index: -1;
 }
 
 #work-circle {
@@ -365,7 +377,6 @@ p {
   height: 200px;
   border-radius: 50%;
   background-color: var(--blue);
-  z-index: -1;
 }
 
 #work-smaller-circle {
@@ -376,7 +387,6 @@ p {
   height: 140px;
   border-radius: 50%;
   background-color: var(--yellow);
-  z-index: -1;
 }
 
 #work-square a,
@@ -396,6 +406,7 @@ p {
   color: green;
 }
 
+/* Work Section Black Section */
 #black-half3 {
   position: absolute;
   display: flex;
@@ -409,7 +420,7 @@ p {
   z-index: -1;
 }
 
-/* yellow is stationary */
+/* yellow triangle is stationary */
 #yellow-triangle {
   margin-top: 50px;
   position: absolute;
@@ -422,6 +433,7 @@ p {
   border-bottom: 300px solid var(--yellow);
 }
 
+/* blue triangle spins */
 #blue-triangle {
   margin-top: 50px;
   position: absolute;
@@ -437,6 +449,7 @@ p {
   animation: rescale 5s infinite;
 }
 
+/* pink triangle spins */
 #pink-triangle {
   margin-top: 50px;
   position: absolute;
@@ -480,6 +493,7 @@ p {
   100% {transform:rotate(360deg);}
 }
 
+/* Contact Me Section */
 .contact-me {
   margin: 1100px 0 10px 0;
   position: absolute;
@@ -494,6 +508,7 @@ p {
   z-index: -1;
 }
 
+/* Contact Me Image */
 .contact-me-header {
   position: absolute;
   display: flex;
@@ -503,13 +518,14 @@ p {
   font-size: 2em;
   font-family: 'Inconsolata', monospace;
   color: var(--yellow);
+  line-height: 2em;
   text-decoration: none;
 }
 
 .contact-me a:hover {
-  font-size: 2.7em;
   font-family: 'Inconsolata', monospace;
   color: var(--pink);
+  line-height: 2em;
   text-decoration: wavy var(--yellow) underline;
 }
 
