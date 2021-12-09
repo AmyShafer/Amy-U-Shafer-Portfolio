@@ -557,7 +557,7 @@ p {
   align-items: center;
   width: 100%;
   height: 700px;
-  background-image: url(assets/images/black-paint.png);
+  background: url(assets/images/black-paint.png);
   z-index: -1;
 }
 
