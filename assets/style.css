@@ -114,7 +114,7 @@ main {
   width: 50%;
   height: 500px;
   justify-content: center;
-  background: black url(./assets/images/navBar.png) repeat;
+  background: black url(../assets/images/navBar.png) repeat;
 }
 
 /* Navigation Bar */
