@@ -114,7 +114,7 @@ main {
   width: 50%;
   height: 500px;
   justify-content: center;
-  background: black url("Amy-U-Shafer-Portfolio/assets/images/navBar.png") repeat;
+  background: black url("../assets/images/navBar.png") repeat;
 }
 
 /* Navigation Bar */
@@ -176,7 +176,7 @@ nav ul li a {
   width: 30%;
   height: 500px;
   justify-content: center;
-  background: black url("Amy-U-Shafer-Portfolio/assets/images/black-paint.png") repeat;
+  background: black url("../assets/images/black-paint.png") repeat;
   z-index: -1;
 }
 
@@ -469,7 +469,7 @@ p {
   width: 65%;
   height: 500px;
   justify-content: center;
-  background: black url("Amy-U-Shafer-Portfolio/assets/images/black-paint.png")repeat;
+  background: black url("../assets/images/black-paint.png")repeat;
   z-index: -1;
 }
 
@@ -557,7 +557,7 @@ p {
   align-items: center;
   width: 100%;
   height: 700px;
-  background: black url("Amy-U-Shafer-Portfolio/assets/images/black-paint.png") repeat;
+  background: black url("..//assets/images/black-paint.png") repeat;
   z-index: -1;
 }
 
