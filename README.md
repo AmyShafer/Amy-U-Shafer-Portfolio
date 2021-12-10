@@ -7,7 +7,6 @@ The website was made from scratch with considerable help from Google for the sha
 
 ## Table of contents
 * [Technologies](#technologies)
-* [Setup](#setup)
 * [Mockup](#mockup)
 * [Resources-used](#resources-used)
 * [Future-plans](#future-plans)
@@ -16,10 +15,6 @@ The website was made from scratch with considerable help from Google for the sha
 
 This website was built and refactored using HTML and CSS.
 
-## Setup
-
-Visual Studio Code was helpful for refactoring the two files mentioned. Developers can download Visual Studio Code <a href="https://code.visualstudio.com/" target="_blank">Here</a>. 
-
 Users do not need setup.
 
 ## Mockup
@@ -27,7 +22,6 @@ Users do not need setup.
 The following image shows the website is action!
 
 <img src="./assets/images/amysPortfolio.jpeg"/>
-
 
 ## Resources-used
 
