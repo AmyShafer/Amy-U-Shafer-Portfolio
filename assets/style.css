@@ -146,6 +146,14 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
 #about-me-link {
   padding: 2em 0 6em 0;
 }
@@ -284,6 +292,7 @@ nav ul li a {
   z-index: -1;
 }
 
+/* Picture of Amy */
 #amy-pic {
   position: absolute;
   display: flex;
@@ -354,6 +363,7 @@ nav ul li a {
   margin-top: 210px;
   font-family: 'Readex Pro', sans-serif;
   width: 200px;
+  line-height: 1.2em;
 }
 
 p {
@@ -411,6 +421,18 @@ p {
   margin-top: -245px;
   font-family: 'Readex Pro', sans-serif;
   width: 200px;
+}
+
+#carouselExampleCaptions {
+  padding-top: 5em;
+}
+
+.carousel-caption h5 {
+  font-family: 'Chango', cursive;
+}
+
+.carousel-caption p {
+  font-family: 'Readex Pro', cursive;
 }
 
 #work-square {
@@ -557,7 +579,7 @@ p {
   align-items: center;
   width: 100%;
   height: 700px;
-  background: black url("../assets/images/black-paint.png") repeat;
+  background: black url("./images/black-paint.png") repeat;
   z-index: -1;
 }
 
