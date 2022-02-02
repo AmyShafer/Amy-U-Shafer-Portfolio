@@ -23,7 +23,7 @@ Users do not need setup.
 
 The following image shows the website is action!
 
-<img src="./assets/images/amysPortfolio.jpeg" width="500" height="450" alt="Amy Shafer's Portfolio"/>
+<img src="./assets/images/amysPortfolio.jpeg" width="500" height="700" alt="Amy Shafer's Portfolio"/>
 
 ## Resources-used
 
