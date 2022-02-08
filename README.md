@@ -47,10 +47,10 @@ An animation feature will be added to the Contact Me section although more preci
 ---
 
 ## Github-url
-<a href="https://github.com/AmyShafer/Amy-U-Shafer-Portfolio" target="_blank_"> Amy Shafer's Portfolio Repository </a> 
+<a href="https://github.com/AmyShafer/Amy-U-Shafer-Portfolio" target="_blank"> Amy Shafer's Portfolio Repository </a> 
 
 ## Deployed-url
-<a href="https://amyshafer.github.io/Amy-U-Shafer-Portfolio/" target="_blank_"> Amy Shafer's Portfolio Deployment URL </a> 
+<a href="https://amyshafer.github.io/Amy-U-Shafer-Portfolio/" target="_blank"> Amy Shafer's Portfolio Deployment URL </a> 
 
 ## Author
 
