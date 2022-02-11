@@ -2,7 +2,16 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+      <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
       <link rel="stylesheet" href="assets/reset.css">
       <link rel="stylesheet" href="assets/style.css">
       <title>Amy U. Shafer Portfolio</title>
@@ -53,32 +62,36 @@
         <section id="work-text">
           <img id="work-header" src="./assets/images/work.png" alt="work-header"/>
           <p>Here is my work so far:</p> 
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        
+          <div class="dropdown mt-1">
+            <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
               Featured Projects
             </button>
           
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Computer Science Quiz</a></li>
-              <li><a class="dropdown-item" href="#">It's Raining Again...Or Is It? The Weather Girl Weather App</a></li>
-              <li><a class="dropdown-item" href="#"></a>Mad Archer's Cookbook</li>
-              <li><a class="dropdown-item" href="#"></a>Scheduler for the Wicked</li>
+              <li><a class="dropdown-item" href="#">Computer Science Icons Quiz</a></li>
+              <li><a class="dropdown-item" href="#">It's Raining Again...Or Is It?</a></li>
+              <li><a class="dropdown-item" href="#">Mad Archer's Cookbook</a></li>
+              <li><a class="dropdown-item" href="#">Scheduler for the Wicked</a></li>
             </ul>
           </div>
-           <!--
+       
+        <div class="container">
           <div id="work-square">
-            <a href="https://amyshafer.github.io/Mad-Archers-Cookbook/" target="_blank">Title + Deployed Link</a>
+            <!-- Deployment Link -->
+            <a href="#" target="_blank" data-set=0>A</a>
           </div>
 
+          <!-- Repo Link -->
           <div id="work-circle">
-            <a href="https://amyshafer.github.io/Scheduler-for-the-Wicked/" target="_blank">Repo Link</a>
+            <a href="#" target="_blank" data-set=2>B</a>
           </div>
 
-          <div id="work-smaller-circle">
-            <a href="https://amyshafer.github.io/CS-Icons-Quiz/" target="_blank">Date</a>
+          <!-- Month/Year Repo Link -->
+          <div id="work-triangle">
+            <a href="#" target="_blank" data-set=1>C</a>
           </div>
-        -->
+        </div>
            
       </section>  
     </section>
@@ -95,11 +108,11 @@
           <li><a href="https://github.com/AmyShafer" target="_blank">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/amyushafer/" target="_blank">LinkedIn</a></li>
           <li><a href="mailto: Amy.U.Shafer@gmail.com" target="_blank">Gmail</a></li>
-          <li><a href="https://drive.google.com/file/d/1n8r_2fhZw9LEPVST7LUojCQkq87B_7Vv/view?usp=sharing" target="_blank">My Resume</a></li>
+          <li><i class="fa-solid fa-circle-arrow-down"></i><a href="https://drive.google.com/file/d/1n8r_2fhZw9LEPVST7LUojCQkq87B_7Vv/view?usp=sharing" target="_blank">My Resume</a></li>
         </ul> 
       </section>
     
-    <script src="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"></script>  
+    <script src="./assets/script.js"></script>
     </body>
 </html>
 

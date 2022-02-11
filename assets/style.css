@@ -418,72 +418,83 @@ p {
 }
 
 #work-text p {
-  margin-top: -245px;
+  margin-top: -240px;
   font-family: 'Readex Pro', sans-serif;
   width: 200px;
 }
 
-#carouselExampleCaptions {
-  padding-top: 5em;
-}
-
-.carousel-caption h5 {
+.dropdown-toggle {
+  margin-top: -120px;
   font-family: 'Chango', cursive;
+  background-color: var(--pink);
+  color: white;
 }
 
-.carousel-caption p {
-  font-family: 'Readex Pro', cursive;
+.dropdown-toggle:hover {
+  font-family: 'Chango', cursive;
+  background-color: var(--blue);
+  color: white;
+}
+
+.dropdown-item {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+a {
+  font-family: 'Chango', cursive;
 }
 
 #work-square {
   position: absolute;
-  display: flex;
-  right: 5px;
-  width: 185px;
-  height: 185px; 
+  top: 10px;
+  left: -15px;
+  width: 145px;
+  height: 145px; 
   background-color: var(--pink); 
+}
+
+#work-triangle {
+  position: absolute;
+  margin-top: 100px;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid var(--blue);
 }
 
 #work-circle {
   position: absolute;
-  top: 40px;
-  left: 10px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: var(--blue);
-}
-
-#work-smaller-circle {
-  position: absolute;
-  top: -110px;
-  left: 50px;
-  width: 140px;
-  height: 140px;
+  right: 0;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: var(--yellow);
 }
 
 #work-square a,
 #work-circle a,
-#work-smaller-circle a {
+#work-triangle a {
   font-size: 1.5em;
-  font-family: 'Inconsolata', monospace;
-  color: darkviolet;
+  font-family: 'Homemade Apple', cursive;
+  color: black;
   text-decoration: none;
 }
 
 #work-square a:hover,
 #work-circle a:hover,
-#work-smaller-circle a:hover {
+#work-triangle a:hover {
   font-size: 2.5em;
-  font-family: 'Inconsolata', monospace;
-  color: green;
+  font-family: 'Homemade Apple', cursive;
+  color: black;
 }
 
 /* Work Section Black Section */
 #black-half3 {
   position: absolute;
+  visibility: visible;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -497,6 +508,7 @@ p {
 
 /* yellow triangle is stationary */
 #yellow-triangle {
+  display: flex;
   margin-top: 50px;
   position: absolute;
   justify-content: center;
@@ -510,6 +522,7 @@ p {
 
 /* blue triangle spins */
 #blue-triangle {
+  display: flex;
   margin-top: 50px;
   position: absolute;
   justify-content: center;
@@ -526,6 +539,7 @@ p {
 
 /* pink triangle spins */
 #pink-triangle {
+  display: flex;
   margin-top: 50px;
   position: absolute;
   justify-content: center;
