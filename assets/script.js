@@ -1,12 +1,12 @@
-const projects = $("dropdown-items")
-const squareForLivetLink = $("work-square");
-const triangleForRepoLink = $("work-triangle");
-const circleForYear = $("work-circle");
-const yellowTriangle = $("yellow-triangle");
-const blueTriangle = $("blue-triangle");
-const pinkTriangle = $("pink-triangle");
+const projects = $(".dropdown-items")
+const squareForLiveLink = $("#work-square");
+const triangleForRepoLink = $("#work-triangle");
+const circleForYear = $("#work-circle");
+const yellowTriangle = $("#yellow-triangle");
+const blueTriangle = $("#blue-triangle");
+const pinkTriangle = $("#pink-triangle");
 
-const projects = [
+const projectsArray = [
     {
         title: "Computer Science Icons Quiz",
         date: "December 2021",
