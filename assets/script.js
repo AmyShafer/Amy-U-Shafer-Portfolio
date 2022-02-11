@@ -38,7 +38,7 @@ const projects = [
 ]
 
 /* Function allows user to select a project to look at */
-function showProject() {
+function showProject(event) {
   // hide all the triangles     
   $("yellowTriangle").attr("display", "none");
   $("blueTriangle").attr("display", "none");
@@ -53,11 +53,12 @@ function showProject() {
 }  
 
 /* jQuery event listener - listens for the project being selected in the dropdown menu */
-  $(".dropdown-items").each(function() {
-    $(this).change(function(event) {
-      showProject(event);
-    })
-  })
+$(function() {
+  $(".dropdown-menu").change(function() {
+    let selectedProject = $(".dropdown-menu option:selected").text();
+    console.log(selectedProject.val());
+   }) 
+})
 
   /*
   $( "select" )
