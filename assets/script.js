@@ -12,33 +12,33 @@ const projectsArray = [
         date: "December 2021",
         deployedLink: "https://amyshafer.github.io/CS-Icons-Quiz/",
         repoLink: "https://github.com/AmyShafer/CS-Icons-Quiz",
-        gif: "CS-Icons-Quiz.gif"
+        gif: "./assets/images/CS-Icons-Quiz.gif"
     },
     {
         title: "It's Raining Men...Or Is It?",
         date: "February 2022",
         deployedLink: "https://amyshafer.github.io/Its-Raining-Again-Or-Is-It",
         repoLink: "https://github.com/AmyShafer/Its-Raining-Again-Or-Is-It",
-        gif: "weatherGirlsApp.gif"
+        gif: "./assets/images/weatherGirlsApp.gif"
     },
     {
         title: "Mad Archer's Cookbook",
         date: "January 2022",
         deployedLink: "https://amyshafer.github.io/Mad-Archers-Cookbook",
         repoLink: "https://github.com/AmyShafer/Mad-Archers-Cookbook",
-        gif: "madArchersCookbook.gif"
+        gif: "./assets/images/madArchersCookbook.gif"
     },
     {
         title: "Scheduler for the Wicked Quiz",
         date: "January 2022",
         deployedLink: "https://amyshafer.github.io/Scheduler-for-the-Wicked ",
         repoLink: "https://github.com/AmyShafer/Scheduler-for-the-Wicked ",
-        gif: "scheduler666.gif"
+        gif: "./assets/images/scheduler666.gif"
     }
 ]
 
 /* Function allows user to select a project to look at */
-function showProject(event) {
+function showProject() {
   // hide all the triangles     
   $("yellowTriangle").attr("display", "none");
   $("blueTriangle").attr("display", "none");
@@ -56,7 +56,7 @@ function showProject(event) {
 $(function() {
   $(".dropdown-menu").change(function() {
     let selectedProject = $(".dropdown-menu option:selected").text();
-    console.log(selectedProject.val());
+    console.log(selectedProject);
    }) 
 })
 
