@@ -53,12 +53,21 @@ function showProject() {
 }  
 
 /* jQuery event listener - listens for the project being selected in the dropdown menu */
-$(function() {
-  $(".dropdown-menu").change(function() {
-    let selectedProject = $(".dropdown-menu option:selected").text();
-    console.log(selectedProject);
-   }) 
-})
+// $(function() {
+//   $(".dropdown-menu").on("click", function() {
+//     let selectedProject = $(".dropdown-menu option:selected").text();
+//     console.log(selectedProject);
+//    }) 
+// })
+
+  $('#dropdownMenuButton1').on("click", function () {
+    const dropdownBtn = $(this).siblings("ul");
+    if (dropdownBtn.attr("class").includes("hidden")) {
+      dropdownBtn.removeClass("hidden");
+    } else {
+      dropdownBtn.addClass("hidden");
+    } 
+  })
 
   /*
   $( "select" )

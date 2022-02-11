@@ -241,6 +241,10 @@ nav ul li a:hover {
   animation: moveLeft 2s infinite;
 }
 
+.hidden {
+  display: none;
+}
+
 @keyframes moveUp {
   from {
     top: 0;
