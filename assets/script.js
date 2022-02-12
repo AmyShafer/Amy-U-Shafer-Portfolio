@@ -75,8 +75,8 @@ $('#dropdownMenuButton1').on("click", function () {
   } 
 })
 
-/* jQuery event listener - listens for the save buttons being clicked */
-$('li').each(function() {
+/* jQuery event listener - listens for the project selection */
+$('.dropdown-menu li').each(function() {
   $(this).click(function(event) {
     showProject(event);
   })

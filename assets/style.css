@@ -434,7 +434,7 @@ p {
 .dropdown-toggle {
   margin-bottom: 150px;
   padding: .5em;
-  width: 250px;
+  width: 270px;
   font-family: 'Chango', cursive;
   background-color: var(--pink);
   color: white;
@@ -457,7 +457,8 @@ p {
 .dropdown-menu {
   border: solid 2px var(--blue);
   margin: 5px;
-  padding: 10px;
+  padding: 5px;
+  flex-direction: column;
 }
 
 .dropdown-item:hover {
