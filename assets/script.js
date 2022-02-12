@@ -2,9 +2,12 @@ const projects = $(".dropdown-items")
 const yellowTriangle = $("#yellow-triangle");
 const blueTriangle = $("#blue-triangle");
 const pinkTriangle = $("#pink-triangle");
+const noTriangles = $("#no-triangles");
+const addGif = $("#project-gif");
 const squareForLiveLink = $("#work-square > a"); 
 const circleForYear = $("#work-circle > a");
 const triangleForRepoLink = $("#work-triangle > a");
+const showProjectGif = $("#black-half3");
 
 const projectsArray = [
     {
@@ -46,6 +49,10 @@ function showProject(event) {
   yellowTriangle.hide();
   blueTriangle.hide();
   pinkTriangle.hide();
+  noTriangles.show();
+  addGif.show();
+  addGif.attr("src", projectsArray[index].gif);
+  addGif.attr("alt", projectsArray[index].title);
 
   // change the text of "Live Link" to the title of the selected project and a link to the deployed project
   squareForLiveLink.attr("href", projectsArray[index].deployedLink);

@@ -582,6 +582,17 @@ a {
   animation: rescale 3s infinite;
 }
 
+#project-gif {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 35em;
+  height: 22em;
+  border-radius: 3em;
+  z-index: 1;
+}
+
 @-webkit-keyframes rescale {
   0% {transform:rotate(0deg);}
   10% {transform:rotate(36deg);}
