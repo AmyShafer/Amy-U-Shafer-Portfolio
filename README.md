@@ -26,7 +26,7 @@ Users do not need setup.
 
 The following image shows the website is action!
 
-<img src="./assets/images/amysPortfolio.jpeg" width="500" height="800" alt="Amy Shafer's Portfolio"/>
+<img src="./assets/images/ausPort.gif" width="410" height="330" alt="Amy Shafer's Portfolio"/>
 
 ## Resources-used
 
