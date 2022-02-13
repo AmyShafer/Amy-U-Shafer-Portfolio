@@ -32,6 +32,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   width: 50%;
+  height: 500px;
   margin-bottom: 5px;
   justify-content: center;
   background-color: white;
@@ -287,8 +288,8 @@ nav ul li a:hover {
 
 /* About Me Section White Section */
 #white-half2 {
-  position: absolute;
   display: flex;
+  position: absolute;
   flex-direction: column;
   flex-wrap: wrap;
   right: 0;
@@ -302,8 +303,8 @@ nav ul li a:hover {
 
 /* Picture of Amy */
 #amy-pic {
-  position: absolute;
   display: flex;
+  position: absolute;
   margin-top: -270px;
   right: 120px;
   animation: moveDown 2s infinite;
@@ -391,6 +392,7 @@ p {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 500px;
 }
 
 /* Work Section Image */
@@ -400,6 +402,7 @@ p {
   display: flex;
   flex-direction: row;
   width: 220px;
+  z-index: 1;
 }
 
 /* Work Section White Section */
@@ -413,7 +416,7 @@ p {
   width: 35%;
   height: 500px;
   background-color: white;
-  z-index: -1;
+  z-index: 1;
 }
 
 #work-text {
@@ -525,9 +528,8 @@ a {
 
 /* Work Section Black Section */
 #black-half3 {
-  position: absolute;
-  visibility: visible;
   display: flex;
+  position: absolute;
   flex-direction: row;
   flex-wrap: wrap;
   right: 0;
@@ -541,8 +543,8 @@ a {
 /* yellow triangle is stationary */
 #yellow-triangle {
   display: flex;
-  margin-top: 50px;
   position: absolute;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   width: 0;
@@ -555,8 +557,8 @@ a {
 /* blue triangle spins */
 #blue-triangle {
   display: flex;
-  margin-top: 50px;
   position: absolute;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   width: 0;
@@ -572,8 +574,8 @@ a {
 /* pink triangle spins */
 #pink-triangle {
   display: flex;
-  margin-top: 50px;
   position: absolute;
+  margin-top: 50px;
   justify-content: center;
   align-items: center;
   width: 0;
@@ -618,11 +620,11 @@ a {
 /* After the user selects a project to view, the triangles change to a gif of the project */
 #project-gif {
   display: flex;
-  margin: 50px;
+  margin: 7%;
   justify-content: center;
   align-items: center;
-  width: 35em;
-  height: 22em;
+  width: 85%;
+  height: auto;
   border-radius: 3em;
   z-index: 1;
 }
@@ -673,15 +675,44 @@ a {
   animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
 }
 
-/* Media Queries */
-@media screen and (max-width: 992px) {
-  body {
+/* Media Queries for Mobile */
+@media screen and (max-width: 600px) {
+  #white-half1, #black-half1 {
     width: 100%;
+  }
+  #black-half2, #white-half2 {
+    width: 100%;
+  }
+  #blue-circle, #yellow-circle, #pink-circle {
+    width: 30px;
+    height: 30px;
+  }
+  #moving-circles {
+    margin-top: 300px;
+    left: 5px;
+  } 
+  #amy-pic {
+    margin-top: -300px;
+    right: 50px;
+  } 
+  .work {
+    margin: 600px 0 100px 0;
+    height: 1200px;
+  }
+  #white-half3, #black-half3 {
+    width: 100%;
+  }
+  #black-half3 {
+    margin-top: 600px;
+    z-index: 1;
+  }
+  .contact-me {
+    margin: 1600px 0 10px 0;
   }
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
+/* Media Queries for larger screens*/
+@media screen and (min-width: 992px) {
   body {
     width: 100%;
   }
