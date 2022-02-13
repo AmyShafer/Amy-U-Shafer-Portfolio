@@ -81,3 +81,20 @@ $('.dropdown-menu li').each(function() {
     showProject(event);
   })
 })
+
+/* jQuery Events for Mobile */
+$('#dropdownMenuButton1').on("tap", function () {
+  const dropdownBtn = $(this).siblings("ul");
+  if (dropdownBtn.attr("class").includes("hidden")) {
+    dropdownBtn.removeClass("hidden");
+  } else {
+    dropdownBtn.addClass("hidden");
+  } 
+})
+
+/* jQuery Events for Mobile */
+$('.dropdown-menu li').each(function() {
+  $(this).tap(function(event) {
+    showProject(event);
+  })
+})
