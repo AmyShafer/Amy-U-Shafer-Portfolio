@@ -215,7 +215,6 @@ nav ul li a:hover {
 }
 
 #blue-circle {
-  /*margin-top: 100px;*/
   position: absolute;
   width: 300px;
   height: 300px;
@@ -249,6 +248,7 @@ nav ul li a:hover {
   display: flex;
 }
 
+/* Animation for the Circles */
 @keyframes moveUp {
   from {
     top: 0;
@@ -431,6 +431,7 @@ p {
   width: 200px;
 }
 
+/* Dropdown menu from Bootstrap */
 .dropdown-toggle {
   margin-bottom: 150px;
   padding: .5em;
@@ -513,6 +514,7 @@ a {
   text-decoration: none;
 }
 
+/* The font gets bigger when the user hovers over the link */
 #work-square a:hover,
 #work-circle a:hover,
 #work-triangle a:hover {
@@ -584,17 +586,7 @@ a {
   animation: rescale 3s infinite;
 }
 
-#project-gif {
-  display: flex;
-  margin: 50px;
-  justify-content: center;
-  align-items: center;
-  width: 35em;
-  height: 22em;
-  border-radius: 3em;
-  z-index: 1;
-}
-
+/* Animation for the Triangles */
 @-webkit-keyframes rescale {
   0% {transform:rotate(0deg);}
   10% {transform:rotate(36deg);}
@@ -621,6 +613,18 @@ a {
   80% {transform:rotate(288deg);}
   90% {transform:rotate(334deg);}
   100% {transform:rotate(360deg);}
+}
+
+/* After the user selects a project to view, the triangles change to a gif of the project */
+#project-gif {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 35em;
+  height: 22em;
+  border-radius: 3em;
+  z-index: 1;
 }
 
 /* Contact Me Section */
@@ -669,14 +673,14 @@ a {
   animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
 }
 
-/* Cards are split into two columns at 992px or smaller */
+/* Media Queries */
 @media screen and (max-width: 992px) {
   body {
     width: 100%;
   }
 }
 
-/* Cards are stacked on top of each other at 768px or smaller */
+/* Media Queries */
 @media screen and (max-width: 768px) {
   body {
     width: 100%;

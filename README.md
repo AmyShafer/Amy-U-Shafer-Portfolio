@@ -18,7 +18,7 @@ The website was made from scratch with considerable help from Google for the sha
 
 ## Technologies
 
-This website was built and refactored using HTML and CSS.
+This website was built using JavaScript, jQuery, BootStrap, HTML, and CSS.
 
 Users do not need setup.
 
