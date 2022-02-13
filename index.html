@@ -36,61 +36,81 @@
   <!-- Above the Fold -->
   <body>
     <main>
-      <section id="white-half1">
-        <h1 id="title">Amy's Portfolio</h1>
-        <div id="blue-square"></div>
-        <div id="yellow-square"></div>
-        <div id="pink-square"></div>
-      </section>
-      <section id="black-half1">
-        <nav>
-          <ul>
-            <li id="about-me-link"><a href="#about-me">About Me</a></li>
-            <li id="work-link"><a href="#work">Work</a></li>
-            <li id="contact-me-link"><a href="#contact-me">Contact Me</a></li>
-          </ul>
-        </nav>
-      </section>
-    </main>
-    <!--About Me Section-->
-    <section id="about-me" class="about-me">
-      <section id="moving-circles">
-        <div id="blue-circle"></div>
-        <div id="yellow-circle"></div>
-        <div id="pink-circle"></div>
-      </section>
-      <section id="black-half2"></section>
-      <section id="white-half2">
-        <img
-          id="amy-pic"
-          src="./assets/images/aShaferPort.png"
-          alt="Picture of Amy Shafer"
-        />
-        <section id="about-me-text">
-          <img
-            id="about-me-header"
-            src="./assets/images/aboutMe.png"
-            alt="about-me-header"
-          />
-          <p>
+      <div class="container">
+        <div class="col">
+          <!-- Title and Squares -->
+          <div class="col-6">  
+          <section id="white-half1">
+            <h1 id="title">Amy's Portfolio</h1>
+              <div id="blue-square"></div>
+              <div id="yellow-square"></div>
+              <div id="pink-square"></div>
+            </section>
+          </div>  
+          <!-- Navigation -->    
+          <div class="col-6">
+            <section id="black-half1">
+              <nav>
+                <ul>
+                  <li id="about-me-link"><a href="#about-me">About Me</a></li>
+                  <li id="work-link"><a href="#work">Work</a></li>
+                  <li id="contact-me-link"><a href="#contact-me">Contact Me</a></li>
+                </ul>
+              </nav>
+            </section>
+          </div>
+        </div>  
+      <!--About Me Section-->
+      <div class="col">
+        
+        <!-- Black + Circles -->
+        <div class="col-6">
+          <section id="about-me" class="about-me">
+            <section id="moving-circles">
+              <div id="blue-circle"></div>
+              <div id="yellow-circle"></div>
+              <div id="pink-circle"></div>
+            </section>
+            <section id="black-half2"></section>
+          </section>
+        </div>
+        <!-- White + About Me Paragraph -->
+        <div class="col-6">
+          <section id="white-half2">
+            <img
+              id="amy-pic"
+              src="./assets/images/aShaferPort.png"
+              alt="Picture of Amy Shafer"
+            />
+          <section id="about-me-text">
+            <img
+              id="about-me-header"
+              src="./assets/images/aboutMe.png"
+              alt="about-me-header"
+            />
+            <p>
             My name is Amy Shafer and I am learning about web development. It's
             going pretty well so far but the circles are supposed to be doing
             something completely different.
-          </p>
-        </section>
-      </section>
-    </section>
+            </p>
+          </section>
+          </section> 
+        </div>
+      </div>
     <!--Work Section-->
-    <section id="work" class="work">
-      <section id="white-half3">
-        <section id="work-text">
-          <img
-            id="work-header"
-            src="./assets/images/work.png"
-            alt="work-header"
-          />
-          <p>Here is my work so far:</p>
-
+    <div class="col-6">
+      <section id="work" class="work">
+        <div class="col-6">
+        <section id="white-half3">
+          <section id="work-text">
+            <img
+              id="work-header"
+              src="./assets/images/work.png"
+              alt="work-header"
+            />
+          
+            <p>Here is my work so far:</p>
+          </section> 
           <div class="dropdown mt-1">
             <button
               class="btn btn-warning dropdown-toggle"
@@ -126,7 +146,7 @@
             </ul>
           </div>
 
-          <div class="container">
+          <div class="col-6">
             <div id="work-square">
               <!-- Deployment Link -->
               <a href="#" target="_blank" data-set="4"></a>
@@ -141,53 +161,55 @@
             <div id="work-triangle">
               <a href="#" target="_blank" data-set="6"></a>
             </div>
+
           </div>
-
-        </section>
-      </section>
-      <section id="black-half3">
-        <div id="yellow-triangle" class="show"></div>
-        <div id="blue-triangle" class="show"></div>
-        <div id="pink-triangle" class="show"></div>
-        <div id="no-triangles" class="hidden">
-          <img
-            id="project-gif"
-            src=""
-            alt=""
-          />
+          </section>
         </div>
-      </section>
+      
+      <!-- Triangles and then Project Gifs -->  
+      <div class="col-6">
+        <section id="black-half3">
+          <div id="yellow-triangle" class="show"></div>
+          <div id="blue-triangle" class="show"></div>
+          <div id="pink-triangle" class="show"></div>
+          <div id="no-triangles" class="hidden">
+            <img
+              id="project-gif"
+              src=""
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
     </section>
-    <!--Contact Me-->
-    <section id="contact-me" class="contact-me">
-      <img
-        id="contact-me-header"
-        src="./assets/images/contactMe.png"
-        alt="contact me header"
-      />
-      <ul>
-        <li>
-          <a href="https://github.com/AmyShafer" target="_blank">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/amyushafer/" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a href="mailto: Amy.U.Shafer@gmail.com" target="_blank">Gmail</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-circle-arrow-down"></i
-          ><a
-            href="https://drive.google.com/file/d/1n8r_2fhZw9LEPVST7LUojCQkq87B_7Vv/view?usp=sharing"
-            target="_blank"
-            >My Resume</a
-          >
-        </li>
-      </ul>
-    </section>
-
-    <script src="./assets/script.js"></script>
+  </div>
+    
+      <!--Contact Me-->
+      <div class="col-12">  
+        <section id="contact-me" class="contact-me">
+          <img
+            id="contact-me-header"
+            src="./assets/images/contactMe.png"
+            alt="contact me header"
+          />
+          <ul>
+            <li>
+              <a href="https://github.com/AmyShafer" target="_blank">GitHub</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/amyushafer/" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="mailto: Amy.U.Shafer@gmail.com" target="_blank">Gmail</a>
+            </li>
+            <li>
+              <a href="https://drive.google.com/file/d/1n8r_2fhZw9LEPVST7LUojCQkq87B_7Vv/view?usp=sharing" target="_blank">My Resume</a>
+            </li>
+          </ul>
+          </section>
+        </div>
+      </div>
+    </main> 
+  <script src="./assets/script.js"></script>
   </body>
 </html>

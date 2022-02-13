@@ -455,6 +455,7 @@ p {
 }
 
 .dropdown-menu {
+  position: absolute;
   border: solid 2px var(--blue);
   margin: 5px;
   padding: 5px;
