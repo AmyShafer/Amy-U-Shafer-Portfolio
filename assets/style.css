@@ -696,7 +696,7 @@ a {
     right: 50px;
   } 
   .work {
-    margin: 600px 0 100px 0;
+    margin: 600px 0 200px 0;
     height: 1200px;
   }
   #white-half3, #black-half3 {
@@ -708,6 +708,44 @@ a {
   }
   .contact-me {
     margin: 1600px 0 10px 0;
+    width: 100%;
+  }
+}
+
+/* Media Queries for iPads */
+@media screen and (max-width: 768px) {
+  #white-half1, #black-half1 {
+    width: 100%;
+  }
+  #black-half2, #white-half2 {
+    width: 100%;
+  }
+  #blue-circle, #yellow-circle, #pink-circle {
+    width: 100px;
+    height: 100px;
+  }
+  #moving-circles {
+    margin-top: 300px;
+    left: 5px;
+  } 
+  #amy-pic {
+    margin-top: -300px;
+    right: 50px;
+  } 
+  .work {
+    margin: 600px 0 200px 0;
+    height: 1200px;
+  }
+  #white-half3, #black-half3 {
+    width: 100%;
+  }
+  #black-half3 {
+    margin-top: 600px;
+    z-index: 1;
+  }
+  .contact-me {
+    margin: 1600px 0 10px 0;
+    width: 100%;
   }
 }
 
