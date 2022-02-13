@@ -38,11 +38,9 @@ The following image shows the website is action!
 
 ## Future-plans
 
-In the future, all the shape animation will be improved. The timing of the squares and the triangles will be tweaked. Presently, the circle animation is comically different from the intial plan.
+In the future, I would like to polish the work section. I would like to make the featured gif more professional looking and title on top of the image.
 
-The links in the Work section, aesthetically and content-wise are both elements that will be revisited. 
-
-An animation feature will be added to the Contact Me section although more precise details are not yet decided.
+I would also like to improve the resume download feature.
 
 ---
 
