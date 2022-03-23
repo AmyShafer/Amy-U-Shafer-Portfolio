@@ -721,11 +721,11 @@ a {
     width: 100%;
   }
   #blue-circle, #yellow-circle, #pink-circle {
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
   }
   #moving-circles {
-    margin-top: 300px;
+    margin-top: 250px;
     left: 5px;
   } 
   #amy-pic {
