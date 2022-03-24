@@ -52,7 +52,7 @@ I would also like to improve the resume download feature.
 
 ## Author
 
-This application was created by Amy U. Shafer. You can reach her at Amy.U.Shafer@gmail.com ✨
+This application was created by Amy U. Shafer. You can reach her at amy.uno.shafer@gmail.com ✨
 
 
 ## Licensing 
