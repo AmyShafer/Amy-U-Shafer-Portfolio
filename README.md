@@ -1,4 +1,3 @@
-
 # Amy Shafer's Portfolio
 
 This website is Amy Shafer's Portfolio. It's a pretty rad place on the internet!
@@ -6,15 +5,15 @@ This website is Amy Shafer's Portfolio. It's a pretty rad place on the internet!
 The website was made from scratch with considerable help from Google for the shape animation. You can find citation for the animations and other fun tidbits below:
 
 ## Table of contents
-* [Technologies](#technologies)
-* [Mockup](#mockup)
-* [Resources-used](#resources-used)
-* [Future-plans](#future-plans)
-* [Github-url](#github-url)
-* [Deployed-url](#deployed-url)
-* [Author](#author)
-* [Licensing](#licensing)
 
+- [Technologies](#technologies)
+- [Mockup](#mockup)
+- [Resources-used](#resources-used)
+- [Future-plans](#future-plans)
+- [Github-url](#github-url)
+- [Deployed-url](#deployed-url)
+- [Author](#author)
+- [Licensing](#licensing)
 
 ## Technologies
 
@@ -30,11 +29,11 @@ The following image shows the website is action!
 
 ## Resources-used
 
-* <a href="https://css-tricks.com/the-shapes-of-css/" target="_blank_">How to make various shapes in CSS</a> 
+- <a href="https://css-tricks.com/the-shapes-of-css/" target="_blank_">How to make various shapes in CSS</a>
 
-* <a href="https://codepen.io/nwolke/pen/pvLjro" target="_blank_">How to rotate a square(and a triangle)</a> 
+- <a href="https://codepen.io/nwolke/pen/pvLjro" target="_blank_">How to rotate a square(and a triangle)</a>
 
-* <a href="https://www.canva.com/" target="_blank_">Design inspiration came from the website Canva</a> 
+- <a href="https://www.canva.com/" target="_blank_">Design inspiration came from the website Canva</a>
 
 ## Future-plans
 
@@ -45,17 +44,18 @@ I would also like to improve the resume download feature.
 ---
 
 ## Github-url
-<a href="https://github.com/AmyShafer/Amy-U-Shafer-Portfolio" target="_blank"> Amy Shafer's Portfolio Repository </a> 
+
+<a href="https://github.com/AmyShafer/Amy-U-Shafer-Portfolio" target="_blank"> Amy Shafer's Portfolio Repository </a>
 
 ## Deployed-url
-<a href="https://amyshafer.github.io/Amy-U-Shafer-Portfolio/" target="_blank"> Amy Shafer's Portfolio Deployment URL </a> 
+
+<a href="https://amyshafer.github.io/Amy-U-Shafer-Portfolio/" target="_blank"> Amy Shafer's Portfolio Deployment URL </a>
 
 ## Author
 
-This application was created by Amy U. Shafer. You can reach her at amy.uno.shafer@gmail.com ✨
+This application was created by Amy U. Shafer. You can reach her at amy.u.shafer@gmail.com ✨
 
-
-## Licensing 
+## Licensing
 
 MIT License
 
@@ -78,5 +78,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-
