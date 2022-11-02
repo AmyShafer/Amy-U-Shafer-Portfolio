@@ -154,7 +154,6 @@ nav ul li a:hover {
   text-decoration: none;
 }
 
-
 #about-me-link {
   padding: 2em 0 6em 0;
 }
@@ -671,7 +670,7 @@ a {
   width: 150px;
   height: 150px;
   opacity: 0;
-  background-color var(--blue);
+  background-color: var(--blue);
   animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
 }
 
