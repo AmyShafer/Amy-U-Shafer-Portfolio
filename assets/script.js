@@ -11,29 +11,29 @@ const showProjectGif = $("#black-half3");
 
 const projectsArray = [
     {
-        title: "CS Icons Quiz",
-        date: "Dec. 2021",
+        title: "",
+        seeProject: "Take Quiz",
         deployedLink: "https://amyshafer.github.io/CS-Icons-Quiz/",
         repoLink: "https://github.com/AmyShafer/CS-Icons-Quiz",
         gif: "./assets/images/CS-Icons-Quiz.gif"
     },
     {
-        title: "Weather App",
-        date: "Feb. 2022",
+        title: "",
+        seeProject: "Find Weather",
         deployedLink: "https://amyshafer.github.io/Its-Raining-Again-Or-Is-It",
         repoLink: "https://github.com/AmyShafer/Its-Raining-Again-Or-Is-It",
         gif: "./assets/images/weatherGirlsApp.gif"
     },
     {
-        title: "Mad Archer's Cookbook",
-        date: "Jan. 2022",
+        title: "",
+        seeProject: "Get Recipes",
         deployedLink: "https://amyshafer.github.io/Mad-Archers-Cookbook",
         repoLink: "https://github.com/AmyShafer/Mad-Archers-Cookbook",
         gif: "./assets/images/madArchersCookbook.gif"
     },
     {
-        title: "Scheduler",
-        date: "Jan. 2022",
+        title: "",
+        seeProject: "Plan Ahead",
         deployedLink: "https://amyshafer.github.io/Scheduler-for-the-Wicked ",
         repoLink: "https://github.com/AmyShafer/Scheduler-for-the-Wicked ",
         gif: "./assets/images/scheduler666.gif"
@@ -59,10 +59,10 @@ function showProject(event) {
   squareForLiveLink.text(projectsArray[index].title)
   // change the date to the month and year the project was most recently published to GitHub
   circleForYear.attr("href", projectsArray[index].deployedLink);
-  circleForYear.text(projectsArray[index].date)
+  circleForYear.text(projectsArray[index].seeProject)
   // change the Repo link so it is a link to the Repo
   triangleForRepoLink.attr("href", projectsArray[index].repoLink);
-  triangleForRepoLink.text("Repo Link")
+  triangleForRepoLink.text("Repo")
 }  
 
 /* jQuery event listener - listens for the dropdown menu to be clicked */
