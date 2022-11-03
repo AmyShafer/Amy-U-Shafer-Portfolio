@@ -396,7 +396,7 @@ p {
 
 /* Work Section Image */
 #work-header {
-  margin-top: -350px;
+  margin-top: -360px;
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -459,15 +459,16 @@ p {
 
 .dropdown-menu {
   position: absolute;
-  border: solid 2px var(--blue);
-  margin: 5px;
-  padding: 5px;
+  border: solid 2px var(--yellow);
+  margin: 2px;
+  padding: 2px;
   flex-direction: column;
+  z-index: 99;
 }
 
 .dropdown-item:hover {
   font-family: 'Readex Pro', sans-serif;
-  color:var(--pink);
+  color:var(--blue);
   font-weight: 900;
   text-decoration: none;
 }
@@ -520,7 +521,7 @@ a {
 #work-square a:hover,
 #work-circle a:hover,
 #work-triangle a:hover {
-  font-size: 2.5em;
+  font-size: 1.7em;
   font-family: 'Homemade Apple', cursive;
   color: black;
 }
